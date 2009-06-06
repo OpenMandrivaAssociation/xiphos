@@ -17,6 +17,7 @@ BuildRequires:	aspell-devel sword-devel >= 1.5.11 imagemagick
 BuildRequires:  perl-XML-Parser
 BuildRequires:  scrollkeeper
 BuildRequires:  gnome-doc-utils desktop-file-utils
+BuildRequires:	libmagick-devel
 Requires: 	sword >= 1.5.11
 Obsoletes:	gnomesword < 2.4.1-2
 Provides:	gnomesword
