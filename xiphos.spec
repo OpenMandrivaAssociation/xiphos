@@ -1,5 +1,5 @@
-%define name gnomesword
-%define version 2.4.1
+%define name xiphos
+%define version 3.1
 %define release %mkrel 1
 
 Summary:	Bible Study Software for Linux and the Gnome Desktop
@@ -7,7 +7,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source:		http://dfn.dl.sourceforge.net/sourceforge/gnomesword/%{name}-%{version}.tar.gz
-URL:		http://gnomesword.sourceforge.net
+URL:		http://xiphos.org/
 License:	GPLv2+
 Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -18,6 +18,8 @@ BuildRequires:  perl-XML-Parser
 BuildRequires:  scrollkeeper
 BuildRequires:  gnome-doc-utils desktop-file-utils
 Requires: 	sword >= 1.5.11
+Obsoletes:	gnomesword < 2.4.1-2
+Provides:	gnomesword
 
 %description
 GnomeSword is a GNOME interface to the Sword Project 
