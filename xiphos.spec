@@ -13,6 +13,7 @@ Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  gtkhtml-3.14-devel
 BuildRequires:	gnomeui2-devel libgnomeprintui-devel
+BuildRequires:	libglade2-devel 
 BuildRequires:	aspell-devel sword-devel >= 1.5.11 imagemagick
 BuildRequires:  perl-XML-Parser
 BuildRequires:  scrollkeeper
