@@ -1,5 +1,5 @@
-%define name xiphos
-%define version 3.1.1
+%define name	xiphos
+%define version 3.1.2
 %define release %mkrel 1
 
 Summary:	Bible Study Software for Linux and the Gnome Desktop
@@ -78,6 +78,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/*
 %{_datadir}/%{name}
+%{_datadir}/icons/hicolor/scalable/apps/xiphos.svg
+%{_datadir}/omf/xiphos/xiphos-C.omf
+%{_datadir}/omf/xiphos/xiphos-fa.omf
+%{_datadir}/omf/xiphos/xiphos-fr.omf
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
