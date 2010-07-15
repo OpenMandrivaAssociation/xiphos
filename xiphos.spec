@@ -1,6 +1,6 @@
 %define name	xiphos
 %define version 3.1.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Bible Study Software for Linux and the Gnome Desktop
 Name:		%{name}
