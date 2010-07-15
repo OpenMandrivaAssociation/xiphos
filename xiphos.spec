@@ -19,6 +19,7 @@ BuildRequires:  perl-XML-Parser
 BuildRequires:  scrollkeeper
 BuildRequires:  gnome-doc-utils desktop-file-utils
 BuildRequires:	libmagick-devel
+BuildRequires:	intltool
 Requires: 	sword >= 1.5.11
 Obsoletes:	gnomesword < 2.4.1-2
 Provides:	gnomesword
@@ -34,7 +35,7 @@ commentaries, lexicons, dictionaries, etc.
 %setup -q
 
 %build
-%configure2_5x --enable-gtkhtml
+%configure2_5x --without-gecko
 %make
 
 %install
