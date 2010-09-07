@@ -1,12 +1,13 @@
 %define name	xiphos
 %define version 3.1.3
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Bible Study Software for Linux and the Gnome Desktop
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source:		http://dfn.dl.sourceforge.net/sourceforge/gnomesword/%{name}-%{version}.tar.gz
+Patch0:		xiphos-3.1.3-gtkhtml.patch
 URL:		http://xiphos.org/
 License:	GPLv2+
 Group:		Text tools
@@ -20,6 +21,7 @@ BuildRequires:  scrollkeeper
 BuildRequires:  gnome-doc-utils desktop-file-utils
 BuildRequires:	libmagick-devel
 BuildRequires:	intltool
+BuildRequires:	libgsf-1-devel
 Requires: 	sword >= 1.5.11
 Obsoletes:	gnomesword < 2.4.1-2
 Provides:	gnomesword
@@ -33,8 +35,10 @@ commentaries, lexicons, dictionaries, etc.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
+autoreconf -fi
 %configure2_5x --without-gecko
 %make
 
