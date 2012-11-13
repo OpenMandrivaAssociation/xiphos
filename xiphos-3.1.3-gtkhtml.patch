@@ -1,0 +1,11 @@
+--- configure.in.orig	2010-09-07 03:35:18.000000000 +0200
++++ configure.in	2010-09-07 03:35:46.000000000 +0200
+@@ -27,7 +27,7 @@
+ AC_SUBST(DIRS, [["backend gecko editor main gnome2"]])
+ AC_SUBST(xiphos_exec, [[xiphos]])
+ 
+-REQUIRED_LIBS="glib-2.0 gtk+-2.0 >= 2.14 libxml-2.0 libglade-2.0 libgtkhtml-3.14 >= 3.23  sword dbus-glib-1 libgsf-1 gtkhtml-editor"
++REQUIRED_LIBS="glib-2.0 gtk+-2.0 >= 2.14 libxml-2.0 libglade-2.0 libgtkhtml-3.14 >= 3.23  sword dbus-glib-1 libgsf-1 gtkhtml-editor-3.14"
+ 
+ AC_ARG_WITH([gecko], AS_HELP_STRING([--without-gecko], [Compile using gtkhtml backend instead]))
+ 
