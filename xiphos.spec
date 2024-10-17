@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	http://dfn.dl.sourceforge.net/sourceforge/gnomesword/%{name}-%{version}.tar.gz
 Patch0:		xiphos-3.1.3-gtkhtml.patch
-URL:		http://xiphos.org/
+URL:		https://xiphos.org/
 License:	GPLv2+
 Group:		Text tools
 BuildRequires:  gtkhtml-3.14-devel
